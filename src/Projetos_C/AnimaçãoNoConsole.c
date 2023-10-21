@@ -4,6 +4,8 @@
 
 main()
 {
+    system("color A");
+
     for (int i = 0; i < 5; i++)
     {
         printf("                0--------");

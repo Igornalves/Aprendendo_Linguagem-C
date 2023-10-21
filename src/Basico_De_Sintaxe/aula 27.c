@@ -4,7 +4,6 @@
 
 float operacoes(float a, float b)
 {
-
     float resultado;
     resultado = a + b;
     resultado = a - b;
@@ -24,7 +23,7 @@ int main()
     printf("                                digite um numero: ");
     scanf("%s", a);
 
-    printf("                                digite um numero: ");
+    printf("                                digite outro numero: ");
     scanf("%s", b);
 
     printf("\n");
@@ -32,5 +31,4 @@ int main()
     printf("                        o resultado de %f com %f e igual a %f\n", a, b, resultado);
 
     system("pause");
-
 }
