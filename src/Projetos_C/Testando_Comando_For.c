@@ -4,8 +4,10 @@ int main(int argc, char *argv[])
 {
     int i, j, count = 0;
     int n;
+
     printf("escreva uma numero: ");
     scanf("%d", &n);
+
     for (i = 1; i <= n; i++)
     {
         for (j = 1; j <= n - i; j++)
@@ -14,8 +16,10 @@ int main(int argc, char *argv[])
             printf("%d", j);
         printf("\n");
     }
+
     return;
 }
+
 int main(int f , int d, int n){
 
     printf("insira um valor para as variaveis: ");
@@ -23,9 +27,6 @@ int main(int f , int d, int n){
 
     for (n = 1; n <= f; n++)
     {
-        for (d = 1, d <= n-f , d++)
-            printf("");
-        
+        printf("nada por nada");
     }
-    
 }

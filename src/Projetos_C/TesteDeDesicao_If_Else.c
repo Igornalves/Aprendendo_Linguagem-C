@@ -15,12 +15,12 @@ int main(void)
         printf("                  vc foi aprovado meus parabens !!!\n\n");
     }
 
-    if (m >= 4 && m < 7)
+    else if (m >= 4 && m < 7)
     {
         printf("                      tem direito a fazer o exame !!! \n\n");
     }
 
-    if (m >= 0 && m <= 3)
+    else if (m >= 0 && m <= 3)
     {
         printf("                  vc foi reprovado lamentamos por isso esforca-te na proxima \n\n");
     }
