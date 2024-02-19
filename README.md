@@ -1,4 +1,4 @@
-# Aprendendo_linguagem-C
+# Resolução de Problemas com Linguagem-C
 
 Um projeto feito por um **iniciante/intermediario** em programação com total intuito de aprender a linguagem C:
 
