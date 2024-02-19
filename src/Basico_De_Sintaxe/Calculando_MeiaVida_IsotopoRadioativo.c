@@ -10,9 +10,9 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
     
   printf("certo, antes de voce me informar os valores que eu vou pedir, vamos "
-         "entender, o que e meia vida? Meia-vida, tamb�m conhecida como"
-         "per�odo de semidesintegra��o, � o tempo necess�rio para que metade"
-         "do n�mero de tomos do is�topo radioativo presente em uma amostra"
+         "entender, o que e meia vida? Meia-vida, também conhecida como"
+         "período de semidesintegração, e o tempo necessário para que metade"
+         "do número de tomos do is�topo radioativo presente em uma amostra"
          "desintegre-se.\n normalmente, � realizado uma serie de equa�oes"
          "para conseguirmos...mas vamos simplificar para voce! \n \n");
 

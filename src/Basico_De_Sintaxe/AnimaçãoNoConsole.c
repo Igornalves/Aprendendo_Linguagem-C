@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-main()
+int main()
 {
     system("color A");
 
