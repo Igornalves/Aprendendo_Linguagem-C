@@ -60,4 +60,5 @@ int main(void)
         break;
     }
     system("cls");
+    system("pause");    
 }
