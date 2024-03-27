@@ -1,51 +1,51 @@
-# Projeto de Aprendizado em Linguagem C
+# C Language Learning Project
 
-Neste Repositorio estarei usando usado de bibliotecas e ainda tambem estarei aprendendo a logica de programacao e parte basica da linguagem C usando em projetos de programacao embarcada:
+In this Repository I will be using libraries and I will also be learning programming logic and the basic part of the C language using it in embedded programming projects:
 
 <div align="center" style="display: inline_block">
 <img alt="java" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 </div>
 
-## Conceito de Bibliotecas em Linguagem de Programacao
+## Concept of Libraries in Programming Language
 
 <div align="center" style="display: inline_block">
 <img alt="java" width="120" src="./icons/biblioteeeca.png">
 </div>
 
-Toda linguagem de programacao por padrao usar de um conjunto de códigos pré-compilados que fornecem funcionalidades específicas para os programadores. 
+Every programming language by default uses a set of pre-compiled codes that provide specific functionality for programmers.
 
-Elas são desenvolvidas por outras pessoas ou pela própria comunidade de programadores para facilitar o desenvolvimento de software, permitindo que os desenvolvedores reutilizem código já escrito em vez de escrever tudo do zero.
+They are developed by other people or the programming community itself to facilitate software development, allowing developers to reuse already written code instead of writing everything from scratch.
 
-### Reutilização de Código: 
+### Code Reuse:
 
-- As bibliotecas fornecem um conjunto de funções, classes, estruturas de dados ou outros recursos que podem ser utilizados em diferentes programas. 
+- Libraries provide a set of functions, classes, data structures or other resources that can be used in different programs.
 
-- Isso significa que os desenvolvedores podem aproveitar o trabalho de outros programadores, economizando tempo e esforço.
+- This means developers can leverage the work of other programmers, saving time and effort.
 
-### Abstração: 
+### Abstraction:
 
-- As bibliotecas fornecem uma camada de abstração sobre o código subjacente. 
+- Libraries provide a layer of abstraction over the underlying code.
 
-- Isso significa que os desenvolvedores podem usar as funcionalidades fornecidas pela biblioteca sem precisar entender todos os detalhes de implementação.
+- This means that developers can use the functionality provided by the library without having to understand all the implementation details.
 
-### Encapsulamento: 
+### Encapsulation:
 
-- As bibliotecas geralmente encapsulam a funcionalidade relacionada em módulos separados, o que promove a modularidade e ajuda a manter o código organizado e gerenciável.
+- Libraries often encapsulate related functionality in separate modules, which promotes modularity and helps keep code organized and manageable.
 
-### Documentação: 
+### Documentation:
 
-- As boas bibliotecas geralmente vêm com documentação detalhada que descreve como usar suas funções ou classes, quais parâmetros são necessários e o que cada função retorna. 
+- Good libraries usually come with detailed documentation that describes how to use their functions or classes, what parameters are required, and what each function returns.
 
-- Isso ajuda os desenvolvedores a entenderem como usar a biblioteca corretamente.
+- This helps developers understand how to use the library correctly.
 
-### Economia de Recursos: 
+### Resource Savings:
 
-- Ao utilizar bibliotecas, os desenvolvedores podem economizar recursos de hardware e tempo de desenvolvimento, pois não precisam reinventar a roda ao implementar funcionalidades comuns.
+- By using libraries, developers can save hardware resources and development time, as they do not need to reinvent the wheel when implementing common functionalities.
 
-### No geral, as bibliotecas desempenham um papel fundamental no desenvolvimento de software moderno, facilitando a reutilização de código, promovendo a eficiência e permitindo que os desenvolvedores concentrem seus esforços nas partes únicas e específicas de seus projetos.
+### Overall, libraries play a fundamental role in modern software development, facilitating code reuse, promoting efficiency, and allowing developers to focus their efforts on the unique, specific parts of their projects.
 
 
-## Explicacao Sobre as Principais Bibliotecas mais usada no repositorio
+## Explanation of the Main Libraries most used in the repository
 
 <br>
 <div align="center" style="display: inline_block">
@@ -54,42 +54,42 @@ Elas são desenvolvidas por outras pessoas ou pela própria comunidade de progra
 
 ### <stdio.h>
 
-- Esta biblioteca fornece funções para entrada e saída de dados. 
+- This library provides functions for data input and output.
 
-- Ela inclui funções como printf() para imprimir dados na saída padrão, scanf() para ler dados da entrada padrão, e várias outras funções para operações de arquivo, como fopen(), fclose(), fread(), fwrite(), etc.
+- It includes functions such as printf() to print data to standard output, scanf() to read data from standard input, and several other functions for file operations such as fopen(), fclose(), fread(), fwrite() , etc.
 
-Aqui está um exemplo simples de uso da biblioteca <stdio.h> em C para entrada e saída de dados:
+Here is a simple example of using the <stdio.h> library in C for data input and output:
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int idade;
-    char nome[50];
+     int age;
+     char name[50];
 
-    // Solicita ao usuário inserir seu nome
-    printf("Digite seu nome: ");
-    scanf("%s", nome);
+     // Prompts the user to enter their name
+     printf("Enter your name: ");
+     scanf("%s", name);
 
-    // Solicita ao usuário inserir sua idade
-    printf("Digite sua idade: ");
-    scanf("%d", &idade);
+     // Prompts the user to enter their age
+     printf("Enter your age: ");
+     scanf("%d", &age);
 
-    // Exibe uma mensagem de saudação com o nome e idade fornecidos
-    printf("Olá, %s! Você tem %d anos.\n", nome, idade);
+     // Display a greeting message with the given name and age
+     printf("Hello, %s! You are %d years old.\n", name, age);
 
-    return 0;
+     return 0;
 }
 ```
 
 
 ### <stdlib.h>
 
-- A biblioteca padrão fornece funções para alocação de memória (malloc(), calloc(), realloc(), free()), controle de processo (exit(), system()), 
+- The standard library provides functions for memory allocation (malloc(), calloc(), realloc(), free()), process control (exit(), system()),
 
-- geração de números aleatórios (rand(), srand()), conversão de string para números (atoi(), atof()) e outras funções úteis.
+- generation of random numbers (rand(), srand()), conversion of string to numbers (atoi(), atof()) and other useful functions.
 
-Aqui está um exemplo simples de uso da biblioteca <stdlib.h> em C para gerar números aleatórios:
+Here is a simple example of using the <stdlib.h> library in C to generate random numbers:
 
 ```c
 #include <stdio.h>
@@ -97,190 +97,46 @@ Aqui está um exemplo simples de uso da biblioteca <stdlib.h> em C para gerar n�
 #include <time.h>
 
 int main() {
-    // Define a semente para a função rand()
-    srand(time(NULL));
+     // Defines the seed for the rand() function
+     srand(time(NULL));
 
-    // Gera e exibe 5 números aleatórios entre 0 e 99
-    printf("Números aleatórios:\n");
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", rand() % 100);
-    }
+     // Generates and displays 5 random numbers between 0 and 99
+     printf("Random numbers:\n");
+     for (int i = 0; i < 5; i++) {
+         printf("%d\n", rand() % 100);
+     }
 
-    return 0;
+     return 0;
 }
 ```
 
 ### <math.h>
 
-- sta biblioteca fornece funções matemáticas para operações comuns, como trigonometria (sin(), cos(), tan()), exponenciação (exp(), log()), 
+- this library provides mathematical functions for common operations such as trigonometry (sin(), cos(), tan()), exponentiation (exp(), log()),
 
-- arredondamento (ceil(), floor()), raiz quadrada (sqrt()), além de constantes matemáticas como π e e.
+- rounding (ceil(), floor()), square root (sqrt()), as well as mathematical constants such as π and e.
 
-Aqui está um exemplo simples de uso da biblioteca <math.h> em C para calcular a raiz quadrada de um número:
+Here is a simple example of using the <math.h> library in C to calculate the square root of a number:
 
 ```c
 #include <stdio.h>
 #include <math.h>
 
 int main() {
-    double num = 25.0;
-    double raiz;
+     double num = 25.0;
+     double root;
 
-    // Calcula a raiz quadrada de num
-    raiz = sqrt(num);
+     // Calculate the square root of num
+     root = sqrt(num);
 
-    printf("A raiz quadrada de %.2f é %.2f\n", num, raiz);
+     printf("The square root of %.2f is %.2f\n", num, root);
 
-    return 0;
+     return 0;
 }
 ```
 
 ### <string.h>
 
-- A biblioteca de strings fornece funções para manipulação de strings em C. 
+- The string library provides functions for manipulating strings in C.
 
-- Isso inclui funções para cópia (strcpy(), strncpy()), concatenação (strcat(), strncat()), comparação (strcmp(), strncmp()), busca (strchr(), strstr()) e outras operações relacionadas a strings.
-
-Aqui está um exemplo simples de uso da biblioteca <string.h> em C para manipulação de strings:
-
-```c
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char str1[20] = "Hello";
-    char str2[20] = " World!";
-
-    // Concatenar str2 no final de str1
-    strcat(str1, str2);
-    printf("Concatenada: %s\n", str1);
-
-    // Copiar str1 para str3
-    char str3[20];
-    strcpy(str3, str1);
-    printf("Copiada: %s\n", str3);
-
-    // Compara str1 com str3
-    int result = strcmp(str1, str3);
-    if (result == 0)
-        printf("As strings são iguais.\n");
-    else if (result < 0)
-        printf("str1 vem antes de str3.\n");
-    else
-        printf("str1 vem depois de str3.\n");
-
-    // Tamanho da string
-    printf("Tamanho de str1: %d\n", strlen(str1));
-
-    return 0;
-}
-```
-
-### <time.h>
-
-- Esta biblioteca fornece funções para manipulação de tempo e data. 
-
-- Ela inclui funções para obter o tempo atual (time()), converter estruturas de tempo (localtime(), gmtime()), formatação de data e hora (strftime()), e outras operações relacionadas ao tempo.
-
-Aqui está um exemplo simples de uso da biblioteca ***<time.h>*** em C para obter e exibir a hora atual:
-
-```c
-#include <stdio.h>
-#include <time.h>
-
-int main() {
-    time_t currentTime;
-    struct tm *timeInfo;
-    char timeString[80];
-
-    // Obter o tempo atual
-    time(&currentTime);
-
-    // Converter o tempo para uma estrutura tm
-    timeInfo = localtime(&currentTime);
-
-    // Formatar o tempo como uma string
-    strftime(timeString, sizeof(timeString), "%Y-%m-%d %H:%M:%S", timeInfo);
-
-    // Exibir o tempo atual formatado
-    printf("O tempo atual é: %s\n", timeString);
-
-    return 0;
-}
-```
-
-### <locale.h>
-
-- Permite que os programas em C sejam adaptados para diferentes configurações regionais, como idioma, formatação de datas, números e moeda, entre outras coisas.
-
-- Ela fornece funções para definir e obter a configuração regional atual, bem como para realizar operações sensíveis à localização.
-
-- ***setlocale():*** Esta função é usada para definir ou obter a configuração regional atual. Ela permite que o programa especifique uma configuração regional específica ou use a configuração regional padrão do sistema.
-
-- ***localeconv():*** Esta função retorna uma estrutura que contém informações sobre a formatação de números e moedas na configuração regional atual.
-
-- Outras funções relacionadas a operações sensíveis à localização, como strcoll() para comparação de strings sensível à localização e strftime() para formatação de data e hora sensível à localização.
-
-Usar corretamente a biblioteca ***<locale.h>*** pode melhorar a usabilidade e a aceitação de um aplicativo em diferentes partes do mundo, pois permite que ele seja adaptado para atender às expectativas culturais dos usuários.
-
-```c
-#include <stdio.h>
-#include <locale.h>
-
-int main() {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); // Define a configuração regional para português do Brasil
-    printf("Número formatado: %f\n", 12345.67);
-    return 0;
-}
-```
-
-### <windows.h>
-
-- A biblioteca <windows.h> é específica para o ambiente Windows e oferece acesso a muitas funcionalidades do sistema operacional Windows. 
-
-- ***Manipulação de Janelas:*** A <windows.h> fornece funcionalidades para criar, manipular e controlar janelas de aplicativos do Windows. Isso inclui funções para criar janelas, registrar classes de janelas, gerenciar mensagens de janelas, etc.
-
-- ***Manipulação de Recursos:*** A <windows.h> fornece funcionalidades para manipular recursos, como ícones, cursores, fontes e imagens. Isso permite que os programas do Windows carreguem e exibam recursos gráficos.
-
-```c
-#include <windows.h>
-
-int main() {
-    // Exibe uma caixa de diálogo de alerta
-    MessageBox(NULL, "Olá, mundo!", "Mensagem de Alerta", MB_OK | MB_ICONINFORMATION);
-
-    return 0;
-}
-```
-
-
-## Extencao usada no Vs.code 
-
-A Extencao usada para compilar o codigo da Liguagem C foi a seguinte: 
-
-<div align="center" style="display: inline_block">
-<img alt="java" src="./icons/Captura de tela 2024-03-19 151234.png">
-</div>
-
-alem dessa extencao vc vai ter quee usar o compilador GCC para usar a extencao funcinar 
-
-<div align="center" style="display: inline_block">
-<img alt="java" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gcc/gcc-original.svg">
-</div>
-
-### Requisitos
-
-- Se você estiver no Linux você deve instalar o gcc
-- Se você estiver no Windows você deve instalar o tdm-gcc
-- Se você estiver no Mac OS, você deve instalar o clang/gcc
-
-### Como usar
-
-Certifique-se de ter o arquivo .c ou .cpp aberto. Pressione “F6”, isso irá compilar e executar o arquivo usando argumentos padrão nas configurações. 
-
-Se você pressionar "F7", serão usados ​​os argumentos que você especificou para o programa. Você também pode depurar pressionando “F5”. Ou você pode usar a barra de status/itens de menu.
-
-Se você deseja registrar o caminho gcc/g++ manualmente, você pode configurá-lo nas configurações. 
-
-Você também pode configurar para salvar o arquivo antes de compilar.
-
+- This includes p functions
